@@ -780,7 +780,7 @@ class Commands:
 
         return valid_toml_files
 
-    def bulk_add_chall(self, start_path: str = ".", byoc: bool = False):
+    def bulk_add_chall(self, start_path: str = ".", byoc: bool = True):
         chall_files = self._find_chall_files(start_path)
         for chall in chall_files:
             self.add_chall(chall, byoc=byoc, bypass_cost=True)
