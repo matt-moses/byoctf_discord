@@ -686,7 +686,7 @@ def hud():
             purchased_hints=purchased_hints,
             api_key=api_key,
             is_admin=user.is_admin,
-            is_tipping_disabled=SETTINGS["disable_custom_tips"],
+            is_tipping_enabled= not SETTINGS["disable_custom_tips"],
             team_byoc_stats=team_byoc_stats,
             users=usernames,
         )
